@@ -35,7 +35,7 @@ function Content() {
   return (
     <div className="content">
       {section == 0 && <ContentStart changeToSection={handleChangeSection} />}
-      {section == 1 && <Flip/>}
+      {section == 1 && <Flip changeToSection={handleChangeSection}/>}
     </div>
   );
 }

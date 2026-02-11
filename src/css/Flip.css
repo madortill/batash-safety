@@ -162,3 +162,172 @@
         bottom: 78rem;
     }
 }
+
+/* FlipWhere */
+
+.title-flipWhere {
+    position: relative;
+    top: 7rem;
+}
+
+.flipWhere-text {
+    background-image: url(../assets/images/loactionBackground.svg);
+    width: 23rem;
+    height: 25rem;
+    font-size: 1.5rem;
+    padding: 3rem 5.5rem 7rem 5.5rem;
+    background-size: 100% 100%;
+    color: #ffffff;
+}
+
+.flipWhere-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: 10rem;
+}
+
+.flipWhere-map {
+    height: 20rem;
+}
+
+@media (max-width: 1050px) {
+    .flipWhere-map {
+        margin: -6rem;
+    }
+    .flipWhere-text {
+        margin: 0;
+    }
+}
+
+/* FlipStage */
+
+.FlipStage-container {
+    height: 35rem;
+    width: 45rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: black;
+    font-family: "assistant-semiBold";
+    padding: 1rem;
+}
+
+.FlipStage-text {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .intoduction-container {
+        width: 35rem;
+    }
+}
+
+/* FlipHow */
+
+.FlipHow-btn {
+    width: 17rem;
+    height: 17rem;
+    background-color: #E69907;
+    border: 5px solid white;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 2.3rem;
+    font-family: "assistant-bold";
+    cursor: pointer;
+}
+
+.FlipHow-btn-img {
+    height: 10rem;
+}
+
+.title-FlipHow {
+    position: relative;
+    top: 7rem;
+}
+
+.FlipHow-content {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    position: relative;
+    top: 15rem;
+}
+
+
+.FlipHow-text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E69907;
+    border: 3px solid #ffffff;
+    border-radius: 14px;
+    width: 30rem;
+    max-width: 90%;
+    padding: 1.5rem 1.8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    text-align: right;
+    white-space: pre-line;
+}
+
+/* כפתור סגירה */
+.FlipHow-text-box .close-btn {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.7rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "fredoka";
+}
+
+/* כותרת */
+.FlipHow-text-box h3 {
+    margin: 1rem 0 1rem 0;
+    font-family: "assistant-bold";
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* אזור תוכן */
+.FlipHow-text-box .FlipHow-text-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+/* טקסט */
+.FlipHow-text-box p {
+    font-family: "assistant";
+    font-size: 1.6rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 1rem;
+    flex: 1;
+}
+
+.FlipHow-text-img {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem
+}
