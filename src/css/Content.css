@@ -10,6 +10,12 @@
     position: relative;
     top: 13rem;
     left: 10rem;
+    color: #073799;
+}
+
+.navbar-start {
+    width: 15rem;
+    cursor: pointer;
 }
 
 
@@ -17,4 +23,40 @@
     .content-start-title {
         left: 7rem;
     }
+}
+
+.title {
+    font-family: "rubik-black";
+    font-size: 2.6rem;
+    color: #073799;
+    margin-bottom: 2rem;
+}
+
+.galBubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galImg-small {
+    height: 10rem;
+    margin-top: 0;
+}
+.galBubble-small {
+    width: 17rem;
+    margin-bottom: -1rem;
+}
+
+.blur-background {
+    background-color: rgb(224, 224, 224, 0.6);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 3;
+}
+
+.nextBtn-overBackground {
+    z-index: 5;
 }

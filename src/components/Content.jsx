@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/Content.css";
 import { useState } from "react";
+import ContentStart from "./ContentStart";
+import Flip from "./Flip";
 
 function Content() {
   const [section, setSection] = useState(0);
@@ -30,7 +32,12 @@ function Content() {
 
     setNavSection((prev) => (targetSection > prev ? targetSection : prev));
   };
-  return <div className="content"></div>;
+  return (
+    <div className="content">
+      {section == 0 && <ContentStart changeToSection={handleChangeSection} />}
+      {section == 1 && <Flip/>}
+    </div>
+  );
 }
 
 export default Content;

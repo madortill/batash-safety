@@ -8,10 +8,10 @@ import backBtn from "../assets/images/backBtn.svg";
 import galGalgal from "../assets/images/galGalgal.png";
 
 import BackBtn from './BackBtn'
-import NextBtn from "./NextBtn";
 
-function InfoPage({ onSendData }) {
+function InfoPage({ changePage }) {
   const { data, switchJSON } = useData();
+  const navigate = useNavigate();
   const [lang, setLang] = useState("he");
 
   const infoTitle = data.infoPage[0].text;
@@ -35,7 +35,7 @@ function InfoPage({ onSendData }) {
   };
 
   const nextPage = () => {
-    onSendData(2);
+    navigate("/content");
   }
 
   return (
@@ -95,7 +95,9 @@ function InfoPage({ onSendData }) {
       </button>
         </div>
       </div>
-      <NextBtn nextPage={nextPage}/>
+      <button className="nextBtn" onClick={nextPage}>
+        {nextBtn}
+      </button>
     </div>
   );
 }

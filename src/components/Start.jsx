@@ -20,7 +20,7 @@ function Start() {
   return (
     <>
       {page === 0 && <StartPage changePage={handleChangePage}/>}
-      {page === 1 && <InfoPage/>}
+      {page === 1 && <InfoPage changePage={handleChangePage}/>}
     </>
   )
 }

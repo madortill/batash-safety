@@ -1,0 +1,164 @@
+/* flipWhen */
+
+.title-flipWhen {
+    position: relative;
+    top: 7rem;
+    left: 15rem;
+}
+
+.text-flipWhen {
+    font-size: 1.7rem;
+    position: relative;
+    top: 7rem;
+    max-width: 50rem;
+    text-align: right;
+}
+
+.gal-flipWhen {
+    cursor: pointer;
+    position: relative;
+    top: 13rem;
+}
+
+.flipWhen-circle {
+    position: relative;
+    z-index: 5;
+    font-size: 2rem;
+    border-radius: 30rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    animation: appearAnimation 1.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.flipWhen-circle1 {
+    color: white;
+    background-color: #073799;
+    width: 12rem;
+    height: 12rem;
+    bottom: 18rem;
+    left: 8rem;
+}
+
+.flipWhen-circle2 {
+    color: white;
+    background-color: #E69907;
+    width: 13rem;
+    height: 13rem;
+    bottom: 8rem;
+    right: 38rem;
+    animation-delay: 1.5s;
+}
+
+.flipWhen-circle3 {
+    color: rgb(0, 0, 0);
+    background-color: #FFF2B4;
+    width: 17rem;
+    height: 17rem;
+    padding: 1rem;
+    bottom: 43rem;
+    right: 35rem;
+    animation-delay: 2s;
+}
+
+.flipWhen-circle4 {
+    color: rgb(0, 0, 0);
+    background-color: #F2CE57;
+    width: 15rem;
+    height: 15rem;
+    bottom: 40rem;
+    left: 10rem;
+    animation-delay: 2.5s;
+}
+
+.flipWhen-circle5 {
+    color: rgb(0, 0, 0);
+    background-color: #E7F9FD;
+    width: 18rem;
+    height: 18rem;
+    padding: 1rem;
+    bottom: 75rem;
+    right: 13rem;
+    animation-delay: 0.5s;
+}
+
+.flipWhen-circle6 {
+    color: white;
+    background-color: #CC3132;
+    width: 19rem;
+    height: 19rem;
+    bottom: 70rem;
+    right: 10rem;
+    animation-delay: 1s;
+}
+
+
+@keyframes appearAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translateY(-5px) scale(1.02);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+@media (max-width: 1150px) {
+    .flipWhen-circle1 {
+        left: 0rem;
+    }
+
+    .flipWhen-circle2 {
+        right: 38rem;
+    }
+
+    .flipWhen-circle3 {
+        right: 35rem;
+    }
+
+    .flipWhen-circle4 {
+        left: 0rem;
+    }
+
+    .flipWhen-circle5 {
+        right: 15rem;
+    }
+
+    .flipWhen-circle6 {
+        right: 17rem;
+    }
+}
+
+@media (max-height: 830px) {
+    .flipWhen-circle1 {
+        bottom: 24rem;
+    }
+
+    .flipWhen-circle2 {
+        bottom: 15rem;
+    }
+
+    .flipWhen-circle3 {
+        bottom: 47rem;
+    }
+
+    .flipWhen-circle4 {
+        bottom: 46rem;
+    }
+
+    .flipWhen-circle5 {
+        bottom: 80rem;
+    }
+
+    .flipWhen-circle6 {
+        bottom: 78rem;
+    }
+}
