@@ -3,15 +3,16 @@ import "../css/Content.css";
 import { useState } from "react";
 import ContentStart from "./ContentStart";
 import Flip from "./Flip";
+import Fire from "./Fire";
 
 function Content() {
-  const [section, setSection] = useState(0);
+  const [section, setSection] = useState(2);
   const [sectionStartPages, setSectionStartPages] = useState({});
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {
-    1: 1, // KnowCar – עמוד אחרון
-    2: 11, // Defender – עמוד סיום
-    3: 6, // Highlix – לדוגמה
+    1: 3, 
+    2: 11, 
+    3: 6, 
     4: 1,
   };
   const handleChangeSection = (targetSection, returnToLast = false) => {
@@ -20,9 +21,9 @@ function Content() {
       setSection(0);
       return;
     }
-
+    
     setSection(targetSection);
-
+    
     setSectionStartPages((prev) => ({
       ...prev,
       [targetSection]: returnToLast
@@ -35,7 +36,8 @@ function Content() {
   return (
     <div className="content">
       {section == 0 && <ContentStart changeToSection={handleChangeSection} />}
-      {section == 1 && <Flip changeToSection={handleChangeSection}/>}
+      {section == 1 && <Flip changeToSection={handleChangeSection} startingPage={sectionStartPages[1] ?? 0} />}
+      {section == 2 && <Fire changeToSection={handleChangeSection} />}
     </div>
   );
 }

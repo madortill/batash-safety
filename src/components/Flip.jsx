@@ -7,16 +7,19 @@ import FlipStage from './FlipStage';
 import FlipHow from './FlipHow';
 
 function Flip({ changeToSection, startingPage }) {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(startingPage);
   const handleChangePage = (targetPage, returnToLast = false) => {
     setPage(targetPage);
+  };
+  const handleChangeSection = (section, returnToLast = false) => {
+    if (changeToSection) changeToSection(section, returnToLast);
   };
   return (
     <div className='Flip'>
      {page === 0 && <FlipWhen changePage={handleChangePage}/>}
      {page === 1 && <FlipWhere changePage={handleChangePage}/>}
      {page === 2 && <FlipStage changePage={handleChangePage}/>}
-     {page === 3 &&  <FlipHow changePage={handleChangePage} changeToSection={changeToSection} />}
+     {page === 3 &&  <FlipHow changePage={handleChangePage} changeToSection={handleChangeSection} />}
     </div>
   )
 }

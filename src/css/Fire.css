@@ -1,0 +1,203 @@
+/* FireStart */
+
+.fireStart-bubble {
+    background-image: url(../assets/images/fire-bubble.svg);
+    width: 20rem;
+    height: 21rem;
+    font-size: 1.5rem;
+    padding: 13rem 3rem 3rem 3rem;
+    background-size: 100% 100%;
+    color: #ffffff;
+    margin: 0;
+}
+
+.fireStart-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem 10rem;
+    justify-items: center;
+    /* ממרכז כל תא */
+    align-items: center;
+    position: relative;
+    top: 4rem;
+}
+
+/* האלמנט השלישי */
+.fireStart-content> :nth-child(3) {
+    grid-column: 1 / span 2;
+    /* תופס את שתי העמודות */
+    justify-self: center;
+    /* ממורכז אופקית */
+    width: 20rem;
+    height: 24rem;
+    padding: 14rem 2.5rem 3rem 2.5rem;
+    margin-top: -4rem;
+}
+
+@media (max-height: 810px) {
+    .fireStart-content> :nth-child(3) {
+        margin-top: -8rem;
+    }
+
+    .fireStart-content {
+        top: 3rem;
+    }
+}
+
+/* FirePrevent */
+
+.FirePrevent-content {
+    width: 45rem;
+    height: 30rem;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    /* חשוב */
+}
+
+.cardsPrevent-wrapper {
+    margin: 1rem 0rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cardPrevent {
+    width: 10rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.cardPrevent-content {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.cardPrevent-img {
+    height: 7rem;
+    margin-bottom: 0rem;
+    border-radius: 6px;
+}
+
+.cardPrevent-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.darkText .cardPrevent-text {
+    color: black;
+}
+
+.cardPrevent.active .cardPrevent-text {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.FirePrevent-note {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 2rem;
+}
+
+/* FirePreventDrive */
+
+.title-FirePreventDrive {
+    position: relative;
+    top: 5rem;
+    left: 19rem;
+}
+
+.FirePreventDrive-text {
+    text-align: start;
+    font-size: 1.7rem;
+    position: relative;
+    top: 8rem;
+    left: 13rem;
+    white-space: pre-line;
+}
+
+.FirePreventDrive-road {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 100vw;
+    z-index: 0;
+}
+
+.FirePreventDrive-carSide {
+    position: absolute;
+    bottom: 5rem;
+    right: 3rem;
+    width: 20rem;
+}
+
+.FirePreventDrive-gasStation {
+    width: 35rem;
+    position: absolute;
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.driveAnimation {
+    animation: carDriveAnimation 7.5s forwards;
+}
+
+@media (max-width: 1200px) {
+    .title-FirePreventDrive {
+        left: 10rem;
+    }
+
+    .FirePreventDrive-carSide {
+        bottom: 3rem;
+    }
+
+    .FirePreventDrive-text {
+        left: 9rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .title-FirePreventDrive {
+        left: 0rem;
+    }
+
+    .FirePreventDrive-carSide {
+        bottom: 3rem;
+    }
+
+    .FirePreventDrive-text {
+        left: 0rem;
+    }
+
+    .FirePreventDrive-gasStation {
+        bottom: 6rem;
+        width: 30rem;
+    }
+}
+
+@keyframes carDriveAnimation {
+    0% {
+        right: 3rem;
+    }
+
+    100% {
+        right: 120rem;
+    }
+}

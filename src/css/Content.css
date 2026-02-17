@@ -32,6 +32,10 @@
     margin-bottom: 2rem;
 }
 
+.boldText {
+    font-family: "assistant-bold";
+}
+
 .galBubble {
     display: flex;
     flex-direction: column;
