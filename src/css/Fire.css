@@ -111,7 +111,8 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    bottom: 2rem;
+    bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 /* FirePreventDrive */
@@ -155,7 +156,7 @@
 }
 
 .driveAnimation {
-    animation: carDriveAnimation 7.5s forwards;
+    animation: carDriveAnimation 5.5s cubic-bezier(0.4, 0, 1, 1) forwards;
 }
 
 @media (max-width: 1200px) {
@@ -198,6 +199,201 @@
     }
 
     100% {
-        right: 120rem;
+        right: 140rem;
+    }
+}
+
+/* FireTriangle */
+
+.title-FireTriangle {
+    position: relative;
+    top: 5rem;
+}
+
+.FireTriangleOff {
+    filter: grayscale(100%);
+}
+
+.FireTriangleSvg-wrapper {
+    position: relative;
+    bottom: 2rem;
+}
+
+.FireTriangle-item {
+    background-color: #CC3132;
+    color: #ffffff;
+    padding: 1rem;
+    border: 4px solid white;
+    position: relative;
+    border-radius: 20px;
+    width: 8rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: assistant-bold;
+    cursor: pointer;
+}
+
+.FireTriangle-air {
+    top: 5rem;
+    right: 14.5rem;
+}
+.FireTriangle-heat {
+    top: 31rem;
+    left: 6.5rem;
+}
+.FireTriangle-material {
+    top: 27rem;
+    right: 35rem;
+}
+
+.FireTriangle-note {
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 5rem;
+}
+
+.carFireOut {
+    width: 20rem;
+    position: relative;
+    top: 9rem;
+}
+
+.carFireOut-item {
+    position: relative;
+    font-size: 1.4rem;
+}
+.carFireOut-item-img {
+    width: 8rem;
+}
+
+.carFireOut-isolation {
+    bottom: 3rem;
+    left: 16rem;
+}
+.carFireOut-cooling {
+    bottom: 12rem;
+    right: 16rem;
+}
+.carFireOut-strangle {
+    bottom: 7rem;
+    cursor: pointer;
+    animation: pulse 1.8s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.FireTriangle-text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #CC3132;
+    border: 3px solid #ffffff;
+    border-radius: 14px;
+    width: 30rem;
+    max-width: 90%;
+    padding: 1.5rem 1.8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    text-align: right;
+    white-space: pre-line;
+}
+
+/* כפתור סגירה */
+.FireTriangle-text-box .close-btn {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.7rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "fredoka";
+}
+
+/* כותרת */
+.FireTriangle-text-box h3 {
+    margin: 1rem 0 1rem 0;
+    font-family: "assistant-bold";
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* טקסט */
+.FireTriangle-text-box p {
+    font-family: "assistant";
+    font-size: 1.6rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 1rem;
+    flex: 1;
+}
+
+.semiTitle {
+    text-decoration: underline;
+}
+
+.FireTriangle-thirdPage {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    top: 10rem;
+    position: relative;
+}
+
+.FireTriangle-thirdPage-textBox {
+    font-size: 1.8rem;
+    white-space: pre-line;
+    text-align: right;
+    max-width: 18rem;
+}
+
+@media (max-width: 1000px) {
+    .FireTriangle-thirdPage {
+        gap: 0rem;
+    }
+    .FireTriangle-thirdPage-textBox {
+        max-width: 15rem;
+    }
+}
+
+/* FirePracticeVideo */
+
+.title-FirePracticeVideo {
+    position: relative;
+    top: 5rem;
+}
+
+.StepsList-FirePracticeVideo {
+    position: relative;
+    top: 10rem;
+}
+
+.note-FirePracticeVideo {
+    position: relative;
+    font-size: 1.2rem;
+    top: 8rem;
+}
+
+@media (max-height: 800px) {
+    .note-FirePracticeVideo {
+        top: 4rem;
     }
 }

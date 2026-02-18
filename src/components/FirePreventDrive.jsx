@@ -8,8 +8,8 @@ import carSide from "../assets/images/car-side.png";
 import road from "../assets/images/road.svg";
 import gasStation from "../assets/images/gas-station.png";
 
-function FirePreventDrive({ changePage }) {
-    const [page, setPage] = useState(0);
+function FirePreventDrive({ changePage, startPage }) {
+    const [page, setPage] = useState(startPage);
   const { data } = useData();
   const nextBtn = data.general[1].text;
   const title = data.FirePreventDrive[0].title;
