@@ -6,9 +6,11 @@ import FirePrevent from './FirePrevent';
 import FirePreventDrive from './FirePreventDrive';
 import FireTriangle from './FireTriangle';
 import FirePracticeVideo from './firePracticeVideo';
+import FirePractice from './FirePractice';
+import FireSafety from './FireSafety';
 
-function Fire({changeToSection, startingPage}) {
-    const [page, setPage] = useState(0);
+function Fire({changePractice, startingPage}) {
+    const [page, setPage] = useState(startingPage);
     const [startPage, setStartPage] = useState(0);
     const pagesMap = {
       0: 0,
@@ -28,7 +30,7 @@ function Fire({changeToSection, startingPage}) {
       }
     };
   const handleChangeSection = (section, returnToLast = false) => {
-    if (changeToSection) changeToSection(section, returnToLast);
+    if (changePractice) changePractice(section, returnToLast);
   };
   return (
     <div className='Fire'>
@@ -37,6 +39,8 @@ function Fire({changeToSection, startingPage}) {
      {page === 2 && <FirePreventDrive changePage={handleChangePage} startPage={startPage} />}
      {page === 3 && <FireTriangle changePage={handleChangePage} startPage={startPage} />}
      {page === 4 && <FirePracticeVideo changePage={handleChangePage} />}
+     {page === 5 && <FirePractice changePage={handleChangePage} />}
+     {page === 6 && <FireSafety changePage={handleChangePage} changeToSection={handleChangeSection}/>}
     </div>
   )
 }

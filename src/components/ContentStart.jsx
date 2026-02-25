@@ -1,7 +1,7 @@
 import React from 'react'
 import "../css/Content.css";
 import { useData } from "../context/DataContext";
-import navbar from "../assets/images/navbar.svg";
+import TiresNavbar from "./TiresNavbar";
 
 function ContentStart({changeToSection}) {
     const { data } = useData();
@@ -12,7 +12,9 @@ function ContentStart({changeToSection}) {
     return (
       <div className="ContentStart">
         <p className="content-start-title">{contentStartTitle}</p>
-        <img src={navbar} alt="navbar" className="navbar-start svg-wrapper" onClick={nextPage} />
+        <div className="svg-wrapper">
+        <TiresNavbar className="navbar-start" contentStart={true} changeToSection={changeToSection}/>
+      </div>
       </div>
     );
 }

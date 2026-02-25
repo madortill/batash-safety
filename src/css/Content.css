@@ -48,7 +48,15 @@
 }
 .galBubble-small {
     width: 17rem;
-    margin-bottom: -1rem;
+    margin-bottom: -0.5rem;
+}
+.galImg-big {
+    height: 15rem;
+    margin-top: 0;
+}
+.galBubble-big {
+    width: 28rem;
+    margin-bottom: 0rem;
 }
 
 .blur-background {
@@ -64,3 +72,5 @@
 .nextBtn-overBackground {
     z-index: 5;
 }
+
+

@@ -1,0 +1,210 @@
+/* PullOverStart */
+
+.title-PullOverStart {
+    position: absolute;
+    top: 8rem;
+    width: 40rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.PullOverImg {
+    position: relative;
+    top: 17rem;
+}
+
+@media (max-width:1000px) {
+    .PullOverImg {
+        width: 50rem;
+    }
+
+}
+
+@media (max-width:850px) {
+    .PullOverImg {
+        width: 40rem;
+    }
+
+}
+
+/* PlanedPullOver */
+
+.title-PlanedPullOver {
+    position: relative;
+    top: 5rem;
+}
+
+
+.note-PlanedPullOver {
+    position: relative;
+    font-size: 1.3rem;
+    top: 10rem;
+}
+
+@media (max-height: 800px) {
+    .note-PlanedPullOver {
+        top: 7rem;
+    }
+}
+
+/* ForcedPullOver */
+
+.title-ForcedPullOver {
+    position: relative;
+    top: 7rem;
+    left: 14rem;
+    max-width: 25rem;
+    z-index: 1;
+    text-align: right;
+}
+
+.title-ForcedPullOver1 {
+    left: 4rem;
+}
+
+.road-ForcedPullOver {
+    height: 100vh;
+    position: absolute;
+    top: 0rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.ForcedPullOver-box {
+    position: relative;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    max-width: 13rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.ForcedPullOver-danger-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem 8rem;
+    justify-items: center;
+    /* ממרכז כל תא */
+    align-items: center;
+    position: relative;
+    top: 4rem;
+}
+
+.ForcedPullOver-danger-container> :nth-child(3) {
+    grid-column: 1 / span 2;
+    /* תופס את שתי העמודות */
+    justify-self: center;
+    /* ממורכז אופקית */
+}
+
+.ForcedPullOver-danger {
+    width: 20rem;
+    transition: transform 0.3s ease;
+}
+.ForcedPullOver-danger:hover {
+    transform: scale(1.03);
+}
+
+.ForcedPullOver-box:hover {
+    transform: scale(1.03);
+}
+
+/* ארוך יותר */
+.ForcedPullOver-box--large {
+    max-width: 16rem;
+}
+
+/* צבעים מותאמים ללומדה שלך */
+.box-yellow {
+    background-color: #E69907;
+    right: 30rem;
+}
+
+.box-blue {
+    background-color: #073799;
+    top: 6rem;
+    right: 25rem;
+}
+
+.box-blue-dark {
+    background-color: #073799;
+    bottom: 32rem;
+    left: 8rem;
+}
+
+.box-red {
+    background-color: #CC3132;
+    bottom: 4rem;
+    left: 15rem;
+}
+
+@media (max-width:1000px) {
+    .title-ForcedPullOver {
+        left: 8rem;
+    }
+    .title-ForcedPullOver1 {
+        left: 2rem;
+    }
+    .ForcedPullOver-danger {
+        width: 17rem;
+    }
+    
+    .box-yellow {
+        background-color: #E69907;
+        right: 23rem;
+    }
+    
+    .box-blue {
+        background-color: #073799;
+        top: 6rem;
+        right: 20rem;
+    }
+    
+    .box-blue-dark {
+        background-color: #073799;
+        bottom: 32rem;
+        left: 4rem;
+    }
+    
+    .box-red {
+        background-color: #CC3132;
+        bottom: 4rem;
+        left: 8rem;
+    }
+    .ForcedPullOver-danger-container {
+        gap: 0rem 6rem;
+        top: 6rem;
+    }
+}
+
+@media (max-height: 830px) {
+    .ForcedPullOver-danger {
+        width: 17rem;
+    }
+}
+
+/* ForcedPullOverPractice */
+
+
+.title-ForcedPullOverPractice {
+    position: relative;
+    top: 5rem;
+}
+
+
+.note-ForcedPullOverPractice {
+    position: relative;
+    font-size: 1.3rem;
+    top: 10rem;
+}
+
+@media (max-height: 800px) {
+    .note-ForcedPullOverPractice {
+        top: 7rem;
+    }
+}

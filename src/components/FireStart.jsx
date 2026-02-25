@@ -13,7 +13,7 @@ function FireStart({ changePage, changeToSection }) {
     const text2 = data.FireStart[0].text2;
     const text3 = data.FireStart[0].text3;
     const previousPage = () => {
-        changeToSection(1, true);
+        changeToSection(0, true);
     };
     const nextPage = () => {
       changePage(1);

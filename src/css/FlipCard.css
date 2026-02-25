@@ -3,6 +3,7 @@
     width: 19rem;
     height: 20rem;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .flip-card-inner {
@@ -42,6 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .flip-card-back {
@@ -56,7 +58,7 @@
 }
 
 .imgFront {
-    height: 8rem;
+    width: 15rem;
 }
 
 .change-bag-size {
@@ -94,4 +96,17 @@
         width: 16rem;
     }
     
+}
+
+
+
+.flip-card--FirePractice .flip-card-front,
+.flip-card--FirePractice .flip-card-back {
+  background-color: white;
+  color: black;
+}
+
+.flip-card--FirePractice {
+    width: 16rem;
+    font-family: "assistant";
 }
