@@ -72,3 +72,32 @@
         width: 35rem;
     }
 }
+
+@media (max-height: 650px) {
+ .StepsList-items {
+    gap: 0.5rem;
+}
+
+.StepsList-item {
+    gap: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.StepsList-number {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    border: 2px solid white;
+}
+
+.StepsList-item-active {
+    font-size: 1.5rem;
+}
+
+.StepsList-arrows {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+}

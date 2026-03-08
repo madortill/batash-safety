@@ -74,7 +74,7 @@ function FireTriangle({ changePage, startPage }) {
             <p>{strangle}</p>
         </div>
       </div>}
-      {page <  2 && <p className="FireTriangle-note">{note}</p>}
+      {page <  2 && <p className={`FireTriangle-note FireTriangle-note${page}`}>{note}</p>}
       {(showStrangleText == true) && <div className="blur-background"></div>}
       {(showStrangleText == true) && (
         <div className="FireTriangle-text-box"> <button className="close-btn" onClick={() => {

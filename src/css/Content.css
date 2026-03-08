@@ -13,6 +13,20 @@
     color: #073799;
 }
 
+@media (max-height: 650px) {
+ .svg-wrapper {
+    position: relative;
+    top: 2rem;
+    right: 15rem;
+}
+
+.content-start-title {
+    font-size: 3.5rem;
+    top: 10rem;
+    left: 10rem;
+}
+}
+
 .navbar-start {
     width: 15rem;
     cursor: pointer;

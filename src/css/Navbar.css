@@ -65,6 +65,7 @@
     animation: none;
 }
 
+
 /* regular-navbar */
 
 .navbar-wrapper {
@@ -95,4 +96,14 @@
     .small-navbar {
         height: 20rem;
     }
+}
+
+
+@media (max-height: 650px) {
+ .big-navbar {
+    height: 30rem;
+}
+.navbar-wrapper {
+    bottom: -3rem;
+}
 }

@@ -1,538 +1,669 @@
 /* FireStart */
 
 .fireStart-bubble {
-    background-image: url(../assets/images/fire-bubble.svg);
-    width: 20rem;
-    height: 21rem;
-    font-size: 1.5rem;
-    padding: 13rem 3rem 3rem 3rem;
-    background-size: 100% 100%;
-    color: #ffffff;
-    margin: 0;
+  background-image: url(../assets/images/fire-bubble.svg);
+  width: 20rem;
+  height: 21rem;
+  font-size: 1.5rem;
+  padding: 13rem 3rem 3rem 3rem;
+  background-size: 100% 100%;
+  color: #ffffff;
+  margin: 0;
 }
 
 .fireStart-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0rem 10rem;
-    justify-items: center;
-    /* ממרכז כל תא */
-    align-items: center;
-    position: relative;
-    top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem 10rem;
+  justify-items: center;
+  /* ממרכז כל תא */
+  align-items: center;
+  position: relative;
+  top: 4rem;
 }
 
 /* האלמנט השלישי */
-.fireStart-content> :nth-child(3) {
-    grid-column: 1 / span 2;
-    /* תופס את שתי העמודות */
-    justify-self: center;
-    /* ממורכז אופקית */
-    width: 20rem;
-    height: 24rem;
-    padding: 14rem 2.5rem 3rem 2.5rem;
-    margin-top: -4rem;
+.fireStart-content > :nth-child(3) {
+  grid-column: 1 / span 2;
+  /* תופס את שתי העמודות */
+  justify-self: center;
+  /* ממורכז אופקית */
+  width: 20rem;
+  height: 24rem;
+  padding: 14rem 2.5rem 3rem 2.5rem;
+  margin-top: -4rem;
 }
 
 @media (max-height: 810px) {
-    .fireStart-content> :nth-child(3) {
-        margin-top: -8rem;
-    }
+  .fireStart-content > :nth-child(3) {
+    margin-top: -8rem;
+  }
 
-    .fireStart-content {
-        top: 3rem;
-    }
+  .fireStart-content {
+    top: 3rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .fireStart-content > :nth-child(3) {
+    margin-top: -9rem;
+  }
+
+  .fireStart-content {
+    top: 0rem;
+  }
+
+  .fireStart-bubble {
+    background-image: url(../assets/images/fire-bubble.svg);
+    width: 18rem;
+    height: 19rem;
+    font-size: 1.3rem;
+    padding: 12rem 3rem 3rem 3rem;
+    background-size: 100% 100%;
+    color: #ffffff;
+    margin: 0;
+  }
 }
 
 /* FirePrevent */
 
 .FirePrevent-content {
-    width: 45rem;
-    height: 30rem;
-    margin: auto;
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    /* חשוב */
+  width: 45rem;
+  height: 30rem;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  /* חשוב */
 }
 
 .cardsPrevent-wrapper {
-    margin: 1rem 0rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: flex-start;
+  margin: 1rem 0rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .cardPrevent {
-    width: 10rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    overflow: hidden;
+  width: 10rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
 
 .cardPrevent-content {
-    padding: 0.5rem;
-    text-align: center;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .cardPrevent-img {
-    height: 7rem;
-    margin-bottom: 0rem;
-    border-radius: 6px;
+  height: 7rem;
+  margin-bottom: 0rem;
+  border-radius: 6px;
 }
 
 .cardPrevent-text {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    font-size: 1.2rem;
-    color: white;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .darkText .cardPrevent-text {
-    color: black;
+  color: black;
 }
 
 .cardPrevent.active .cardPrevent-text {
-    max-height: 200px;
-    opacity: 1;
-    margin-top: 1rem;
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 1rem;
 }
 
 .FirePrevent-note {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 1rem;
-    font-size: 1.3rem;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 /* FirePreventDrive */
 
 .title-FirePreventDrive {
-    position: relative;
-    top: 5rem;
-    left: 19rem;
+  position: relative;
+  top: 5rem;
+  left: 19rem;
 }
 
 .FirePreventDrive-text {
-    text-align: start;
-    font-size: 1.7rem;
-    position: relative;
-    top: 8rem;
-    left: 13rem;
-    white-space: pre-line;
+  text-align: start;
+  font-size: 1.7rem;
+  position: relative;
+  top: 8rem;
+  left: 13rem;
+  white-space: pre-line;
 }
 
 .FirePreventDrive-road {
-    position: absolute;
-    bottom: 0rem;
-    right: 0rem;
-    width: 100vw;
-    z-index: 0;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  width: 100vw;
+  z-index: 0;
 }
 
 .FirePreventDrive-carSide {
-    position: absolute;
-    bottom: 5rem;
-    right: 3rem;
-    width: 20rem;
+  position: absolute;
+  bottom: 5rem;
+  right: 10rem;
+  width: 20rem;
 }
 
 .FirePreventDrive-gasStation {
-    width: 35rem;
-    position: absolute;
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
+  width: 35rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .driveAnimation {
-    animation: carDriveAnimation 5s cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation: carDriveAnimation 5s cubic-bezier(0.4, 0, 1, 1) forwards;
 }
 
 @media (max-width: 1200px) {
-    .title-FirePreventDrive {
-        left: 10rem;
-    }
+  .title-FirePreventDrive {
+    left: 10rem;
+  }
 
-    .FirePreventDrive-carSide {
-        bottom: 3rem;
-    }
+  .FirePreventDrive-carSide {
+    bottom: 3rem;
+  }
 
-    .FirePreventDrive-text {
-        left: 9rem;
-    }
-
+  .FirePreventDrive-text {
+    left: 9rem;
+  }
 }
 
 @media (max-width: 900px) {
-    .title-FirePreventDrive {
-        left: 0rem;
-    }
+  .title-FirePreventDrive {
+    left: 0rem;
+  }
 
-    .FirePreventDrive-carSide {
-        bottom: 3rem;
-    }
+  .FirePreventDrive-carSide {
+    bottom: 3rem;
+  }
 
-    .FirePreventDrive-text {
-        left: 0rem;
-    }
+  .FirePreventDrive-text {
+    left: 0rem;
+  }
 
-    .FirePreventDrive-gasStation {
-        bottom: 6rem;
-        width: 30rem;
-    }
+  .FirePreventDrive-gasStation {
+    bottom: 6rem;
+    width: 30rem;
+  }
 }
 
 @keyframes carDriveAnimation {
-    0% {
-        right: 3rem;
-    }
+  0% {
+    right: 10rem;
+  }
 
-    100% {
-        right: 140rem;
-    }
+  100% {
+    right: 140rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .FirePreventDrive-gasStation {
+    bottom: 8rem;
+    width: 28rem;
+    right: 65%;
+    transform: translateX(50%);
+  }
+  .FirePreventDrive-text {
+  text-align: start;
+  font-size: 1.5rem;
+  position: relative;
+  top: 8rem;
+  left: 13rem;
+  white-space: pre-line;
+}
 }
 
 /* FireTriangle */
 
 .title-FireTriangle {
-    position: relative;
-    top: 5rem;
+  position: relative;
+  top: 5rem;
 }
 
 .FireTriangleOff {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .FireTriangleSvg-wrapper {
-    position: relative;
-    bottom: 2rem;
+  position: relative;
+  bottom: 2rem;
 }
 
 .FireTriangle-item {
-    background-color: #CC3132;
-    color: #ffffff;
-    padding: 1rem;
-    border: 4px solid white;
-    position: relative;
-    border-radius: 20px;
-    width: 8rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-family: assistant-bold;
-    cursor: pointer;
+  background-color: #cc3132;
+  color: #ffffff;
+  padding: 1rem;
+  border: 4px solid white;
+  position: relative;
+  border-radius: 20px;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: assistant-bold;
+  cursor: pointer;
 }
 
 .FireTriangle-air {
-    top: 5rem;
-    right: 14.5rem;
+  top: 5rem;
+  right: 14.5rem;
 }
 .FireTriangle-heat {
-    top: 31rem;
-    left: 6.5rem;
+  top: 31rem;
+  left: 6.5rem;
 }
 .FireTriangle-material {
-    top: 27rem;
-    right: 35rem;
+  top: 27rem;
+  right: 35rem;
 }
 
 .FireTriangle-note {
-    font-size: 1.3rem;
-    position: relative;
-    bottom: 5rem;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 5rem;
 }
 
 .carFireOut {
-    width: 20rem;
-    position: relative;
-    top: 9rem;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
 }
 
 .carFireOut-item {
-    position: relative;
-    font-size: 1.4rem;
+  position: relative;
+  font-size: 1.4rem;
 }
 .carFireOut-item-img {
-    width: 8rem;
+  width: 8rem;
 }
 
 .carFireOut-isolation {
-    bottom: 3rem;
-    left: 16rem;
+  bottom: 3rem;
+  left: 16rem;
 }
 .carFireOut-cooling {
-    bottom: 12rem;
-    right: 16rem;
+  bottom: 12rem;
+  right: 16rem;
 }
 .carFireOut-strangle {
-    bottom: 7rem;
-    cursor: pointer;
-    animation: pulse 1.8s ease infinite;
+  bottom: 7rem;
+  cursor: pointer;
+  animation: pulse 1.8s ease infinite;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.1);
-    }
+  50% {
+    transform: scale(1.1);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 .FireTriangle-text-box {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #CC3132;
-    border: 3px solid #ffffff;
-    border-radius: 14px;
-    width: 30rem;
-    max-width: 90%;
-    padding: 1.5rem 1.8rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    text-align: right;
-    white-space: pre-line;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #cc3132;
+  border: 3px solid #ffffff;
+  border-radius: 14px;
+  width: 30rem;
+  max-width: 90%;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  text-align: right;
+  white-space: pre-line;
 }
 
 /* כפתור סגירה */
 .FireTriangle-text-box .close-btn {
-    position: absolute;
-    top: 0.3rem;
-    right: 0.7rem;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: "fredoka";
+  position: absolute;
+  top: 0.3rem;
+  right: 0.7rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "fredoka";
 }
 
 /* כותרת */
 .FireTriangle-text-box h3 {
-    margin: 1rem 0 1rem 0;
-    font-family: "assistant-bold";
-    font-size: 2rem;
-    color: #ffffff;
-    text-align: center;
+  margin: 1rem 0 1rem 0;
+  font-family: "assistant-bold";
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
 }
 
 /* טקסט */
 .FireTriangle-text-box p {
-    font-family: "assistant";
-    font-size: 1.6rem;
-    color: #ffffff;
-    line-height: 1.5;
-    margin: 1rem;
-    flex: 1;
+  font-family: "assistant";
+  font-size: 1.6rem;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 1rem;
+  flex: 1;
 }
 
 .semiTitle {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .FireTriangle-thirdPage {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    top: 10rem;
-    position: relative;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  top: 10rem;
+  position: relative;
 }
 
 .FireTriangle-thirdPage-textBox {
-    font-size: 1.8rem;
-    white-space: pre-line;
-    text-align: right;
-    max-width: 18rem;
+  font-size: 1.8rem;
+  white-space: pre-line;
+  text-align: right;
+  max-width: 18rem;
 }
 
 @media (max-width: 1000px) {
-    .FireTriangle-thirdPage {
-        gap: 0rem;
-    }
-    .FireTriangle-thirdPage-textBox {
-        max-width: 15rem;
-    }
+  .FireTriangle-thirdPage {
+    gap: 0rem;
+  }
+  .FireTriangle-thirdPage-textBox {
+    max-width: 15rem;
+  }
+}
+
+@media (max-height: 650px) {
+ .FireTriangleSvg-wrapper {
+  position: relative;
+  bottom: 12rem;
+  transform: scale(0.55);
+}
+.FireTriangle-air {
+  top: 5rem;
+  right: 16.5rem;
+}
+.FireTriangle-heat {
+  top: 20rem;
+  right: 1rem;
+}
+.FireTriangle-material {
+  top: 16rem;
+  right: 33rem;
+}
+.FireTriangle-note {
+  bottom: 23rem;
+}
+
+
+.carFireOut {
+    width: 18rem;
+  top: 3.5rem;
+}
+
+.carFireOut-isolation {
+  bottom: 7rem;
+  left: 16rem;
+}
+.carFireOut-cooling {
+  bottom: 16rem;
+  right: 16rem;
+}
+.carFireOut-strangle {
+  bottom: 11rem;
+  cursor: pointer;
+  animation: pulse 1.8s ease infinite;
+}
+
+.FireTriangle-note1{
+    bottom: 10rem;
+}
+
+.carFireOut-item-img {
+  width: 7rem;
+}
+.FireTriangle-text-box {
+  top: 15%;
+
+}
+
+.FireTriangle-carOnFire {
+    width: 18rem;
+}
+.FireTriangle-thirdPage-textBox {
+  font-size: 1.5rem;
+  max-width: 15rem;
+}
+
+.FireTriangle-thirdPage {
+  gap: 1rem;
+  top: 7rem;
+}
+
+
 }
 
 /* FirePracticeVideo */
 
 .title-FirePracticeVideo {
-    position: relative;
-    top: 5rem;
+  position: relative;
+  top: 5rem;
 }
 
 .StepsList-FirePracticeVideo {
-    position: relative;
-    top: 10rem;
+  position: relative;
+  top: 10rem;
 }
 
 .note-FirePracticeVideo {
-    position: relative;
-    font-size: 1.2rem;
-    top: 8rem;
+  position: relative;
+  font-size: 1.2rem;
+  top: 8rem;
 }
 
 @media (max-height: 800px) {
-    .note-FirePracticeVideo {
-        top: 4rem;
-    }
+  .note-FirePracticeVideo {
+    top: 4rem;
+  }
 }
 
 /* FirePractice */
 
 .FirePractice-flipCard {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-    font-family: "assistant-bold";
-    color: #073799;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "assistant-bold";
+  color: #073799;
 }
 
 .FirePractice-cardContainer {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 7rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 7rem;
 }
 
 .FirePractice-text {
-    font-size: 1.7rem;
-    width: 55rem;
-    position: relative;
-    top: 5rem;
+  font-size: 1.7rem;
+  width: 55rem;
+  position: relative;
+  top: 5rem;
 }
 
 .FirePractice-note {
-    position: relative;
-    top: 10rem;
-    font-size: 1.2rem;
+  position: relative;
+  top: 10rem;
+  font-size: 1.2rem;
 }
 
 .gal-FirePractice {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
+@media (max-height: 650px) {
+.FirePractice-cardContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 4rem;
+}
+
+.FirePractice-text {
+  font-size: 1.5rem;
+  top: 3.5rem;
+}
+.FirePractice-note {
+  top: 5.5rem;
+  font-size: 1.2rem;
+}
+}
 
 /* FireSafety */
 
 .title-FireSafety {
-    position: relative;
-    top: 5rem;
+  position: relative;
+  top: 5rem;
 }
 
 .warning-FireSafety {
-    background-image: url(../assets/images/big-warning.svg);
-    background-size: 100% 100%;
-    width: 19.5rem;
-    height: 19.5rem;
-    padding: 0rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #ffffff;
-    transition: transform 0.3s ease;
+  background-image: url(../assets/images/big-warning.svg);
+  background-size: 100% 100%;
+  width: 19.5rem;
+  height: 19.5rem;
+  padding: 0rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: transform 0.3s ease;
 }
 
 .warning-FireSafety:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
-
 
 .FireSafety-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-    justify-items: center;
-    position: relative;
-    top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  position: relative;
+  top: 4rem;
 }
 
-.FireSafety-content>.warning-FireSafety {
-    grid-column: span 2;
+.FireSafety-content > .warning-FireSafety {
+  grid-column: span 2;
 }
 
-.FireSafety-content>.warning-FireSafety:nth-child(4) {
-    grid-column: 2 / span 2;
+.FireSafety-content > .warning-FireSafety:nth-child(4) {
+  grid-column: 2 / span 2;
 }
 
-.FireSafety-content>.warning-FireSafety:nth-child(5) {
-    grid-column: 4 / span 2;
+.FireSafety-content > .warning-FireSafety:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 @media (max-width: 1000px) {
-    .warning-FireSafety {
-        width: 17rem;
-        height: 17rem;
-        padding: 0rem 2.4rem;
-        font-size: 1.3rem;
-    }
-    .FireSafety-content {
-        gap: 0.5rem;
-    }
-    
+  .warning-FireSafety {
+    width: 17rem;
+    height: 17rem;
+    padding: 0rem 2.4rem;
+    font-size: 1.3rem;
+  }
+  .FireSafety-content {
+    gap: 0.5rem;
+  }
 }
 @media (max-width: 850px) {
-    .warning-FireSafety {
-        width: 16rem;
-        height: 16rem;
-        padding: 0rem 2.4rem;
-        font-size: 1.2rem;
-    }
-    .FireSafety-content {
-        gap: 0.2rem;
-    }
-    
+  .warning-FireSafety {
+    width: 16rem;
+    height: 16rem;
+    padding: 0rem 2.4rem;
+    font-size: 1.2rem;
+  }
+  .FireSafety-content {
+    gap: 0.2rem;
+  }
 }
 
 @media (max-height: 800px) {
-    .warning-FireSafety {
-        width: 17rem;
-        height: 17rem;
-        padding: 0rem 2.4rem;
-        font-size: 1.3rem;
-    }
-    .FireSafety-content {
-        gap: 0.5rem;
-    }
-    
+  .warning-FireSafety {
+    width: 17rem;
+    height: 17rem;
+    padding: 0rem 2.4rem;
+    font-size: 1.3rem;
+  }
+  .FireSafety-content {
+    gap: 0.5rem;
+  }
 }
 
 @media (max-height: 700px) {
-    .warning-FireSafety {
-        width: 16rem;
-        height: 16rem;
-        padding: 0rem 2.4rem;
-        font-size: 1.2rem;
-    }
-    .FireSafety-content {
-        gap: 0.2rem;
-    }
-    
+  .warning-FireSafety {
+    width: 16rem;
+    height: 16rem;
+    padding: 0rem 2.4rem;
+    font-size: 1.2rem;
+  }
+  .FireSafety-content {
+    gap: 0.2rem;
+  }
+}
+
+@media (max-height: 650px) {
+ .warning-FireSafety {
+    width: 14.5rem;
+    height: 14.5rem;
+    padding: 0rem 2.2rem;
+    font-size: 1.1rem;
+  }
+  .FireSafety-content {
+    gap: 0.1rem;
+  }
 }

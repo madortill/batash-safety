@@ -163,6 +163,23 @@
     }
 }
 
+@media (max-height: 650px) {
+ .gal-flipWhen {
+    cursor: pointer;
+    top: 9rem;
+    
+}
+
+
+    .flipWhen-circle5 {
+        bottom: 83rem;
+    }
+
+    .flipWhen-circle6 {
+        bottom: 82.5rem;
+    }
+}
+
 /* FlipWhere */
 
 .title-flipWhere {
@@ -269,6 +286,8 @@
 }
 
 
+
+
 .FlipHow-text-box {
     position: absolute;
     top: 30%;
@@ -330,4 +349,16 @@
     position: absolute;
     top: 0.5rem;
     left: 0.5rem
+}
+
+
+@media (max-height: 650px) {
+
+.FlipHow-content {
+    top: 10rem;
+}
+
+.FlipHow-text-box {
+    top: 20%;
+}
 }

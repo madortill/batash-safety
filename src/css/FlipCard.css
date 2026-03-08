@@ -61,11 +61,6 @@
     width: 15rem;
 }
 
-.change-bag-size {
-    width: 12rem;
-    height: 12rem;
-    font-size: 1.3rem;
-}
 
 .textBack {
     padding: 5%;
@@ -109,4 +104,11 @@
 .flip-card--FirePractice {
     width: 16rem;
     font-family: "assistant";
+}
+
+@media (max-height: 650px) {
+.flip-card--FirePractice {
+    width: 14rem;
+    height: 17rem;
+}
 }

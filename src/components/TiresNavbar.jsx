@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/Navbar.css";
-import { useState } from "react";
 import { useData } from "../context/DataContext";
 
 function TiresNavbar({ contentStart, changeToSection, navSection }) {

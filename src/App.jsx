@@ -1,6 +1,5 @@
 import React from "react";
-import { useData } from "./context/DataContext";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 import "./css/App.css";
 import Start from "./components/Start";
