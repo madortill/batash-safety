@@ -5,7 +5,7 @@ import FireStart from './FireStart';
 import FirePrevent from './FirePrevent';
 import FirePreventDrive from './FirePreventDrive';
 import FireTriangle from './FireTriangle';
-import FirePracticeVideo from './firePracticeVideo';
+import FirePracticeVideo from './FirePracticeVideo';
 import FirePractice from './FirePractice';
 import FireSafety from './FireSafety';
 

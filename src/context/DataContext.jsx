@@ -45,7 +45,6 @@ export const DataProvider = ({ children }) => {
         currentJSON,
         playAudio,
         stopAudio,
-        currentJSON,
       }}
     >
       {children}
