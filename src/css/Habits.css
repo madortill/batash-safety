@@ -1,0 +1,237 @@
+.title-Habits {
+  position: relative;
+  top: 5rem;
+}
+
+/* HabitsStart */
+
+.text-HabitsStart {
+  font-size: 1.7rem;
+  position: relative;
+  top: 7rem;
+  max-width: 50rem;
+  text-align: center;
+}
+
+.gal-HabitsStart {
+  cursor: pointer;
+  position: relative;
+  top: 13rem;
+}
+
+@media (max-height: 650px) {
+  .gal-HabitsStart {
+    cursor: pointer;
+    top: 9rem;
+  }
+}
+
+/* DrivingHabits */
+
+.title-DrivingHabits {
+  position: relative;
+  top: 7rem;
+  left: 15rem;
+}
+
+.DrivingHabits-content {
+  background-color: white;
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  white-space: pre-line;
+  text-align: right;
+  border-radius: 10px;
+  position: relative;
+  top: 7rem;
+}
+
+.driverTour-btn {
+  color: #fff2b4;
+  border: 2px solid #fff2b4;
+  background-color: #e69907;
+  border-radius: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-family: "assistant-bold";
+  position: relative;
+  bottom: 10.7rem;
+  right: 8rem;
+  cursor: pointer;
+  animation: pulse 1.8s ease infinite;
+}
+
+.driverTour-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+  background-color: #073799;
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  white-space: pre-line;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.DrivingHabits-content1 {
+  background-color: #e69907;
+  color: white;
+}
+.DrivingHabits-content2 {
+  background-color: #073799;
+  color: white;
+}
+
+/* EffectDrive */
+.carTriangle {
+  position: relative;
+  bottom: 2rem;
+}
+.EffectDrive-item {
+  background-color: #073799;
+  color: #ffffff;
+  padding: 1rem;
+  border: 4px solid white;
+  position: relative;
+  border-radius: 20px;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: assistant-bold;
+  cursor: pointer;
+}
+
+.EffectDrive-driver {
+  top: 5rem;
+  right: 15rem;
+}
+.EffectDrive-road {
+  top: 31rem;
+  left: 6rem;
+}
+.EffectDrive-car {
+  top: 27rem;
+  right: 37rem;
+}
+
+.EffectDrive-text {
+  font-size: 1.8rem;
+  position: relative;
+  bottom: 9rem;
+}
+
+@media (max-height: 650px) {
+  .carTriangle {
+    position: relative;
+    bottom: 12rem;
+    transform: scale(0.55);
+  }
+  .EffectDrive-driver {
+    top: 5rem;
+    right: 16.5rem;
+  }
+  .EffectDrive-road {
+    top: 20rem;
+    right: 1rem;
+  }
+  .EffectDrive-car {
+    top: 16rem;
+    right: 33rem;
+  }
+  .EffectDrive-text {
+    bottom: 25rem;
+  }
+}
+
+/* Obstacle */
+
+.obstacleCards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+
+.obstacleCard {
+  width: 10rem;
+  border-radius: 4px;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.obstacleCard-title {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: #0b43b8;
+  color: white;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 1.2rem 0.4rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.obstacleCard.orange .obstacleCard-title {
+  background: #e39b00;
+}
+
+.obstacleCard-content {
+  background: inherit;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    padding 0.35s ease;
+  padding: 0 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.obstacleCard.open .obstacleCard-content {
+  max-height: 20rem;
+  opacity: 1;
+  padding: 14px 10px 18px;
+}
+
+.obstacleCard:not(.orange) .obstacleCard-content {
+  background: #0b43b8;
+  color: white;
+}
+
+.obstacleCard.orange .obstacleCard-content {
+  background: #e39b00;
+  color: white;
+}
+
+.Obstacle-cards {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  top: 16rem;
+  right: 50%;
+  transform: translateX(50%);
+
+}
+
+.text-Obstacle {
+  font-size: 1.6rem;
+  position: relative;
+  top: 5rem;
+}
+
+.obstacle-note {
+  position: relative;
+  top: 27rem;
+}

@@ -27,6 +27,18 @@
 
 }
 
+@media (max-height: 650px) {
+ .title-PullOverStart {
+    top: 4rem;
+}
+
+.PullOverImg {
+    position: relative;
+    top: 10rem;
+    width: 30rem;
+}
+}
+
 /* PlanedPullOver */
 
 .title-PlanedPullOver {

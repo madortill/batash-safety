@@ -7,6 +7,7 @@ import Fire from "./Fire";
 import PullOver from "./PullOver";
 import Practices from "./Practices";
 import NavBar from "./NavBar";
+import Habits from "./Habits";
 
 function Content() {
   const [section, setSection] = useState(0);
@@ -14,7 +15,7 @@ function Content() {
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {
     1: 2,
-    2: 6,
+    2: 2,
     3: 3,
     4: 1,
   };
@@ -39,10 +40,12 @@ function Content() {
   return (
     <div className="content">
       {section == 0 && <ContentStart changeToSection={handleChangeSection} />}
-      {section == 1 && (
+     {section == 1 && <Habits changeToSection={handleChangeSection}
+          startingPage={sectionStartPages[1] ?? 0}/>}
+      {section == 2 && (
         <Practices
           changeToSection={handleChangeSection}
-          startingPage={sectionStartPages[1] ?? 0}
+          startingPage={sectionStartPages[2] ?? 0}
         />
       )}
       {section !== 0 && (
