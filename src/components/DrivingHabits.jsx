@@ -5,8 +5,8 @@ import { useState } from "react";
 
 import BackBtn from "./BackBtn";
 
-function DrivingHabits({ changePage, startPage = 0 }) {
-  const [page, setPage] = useState(startPage);
+function DrivingHabits({ changePage, startPage }) {
+  const [page, setPage] = useState(startPage ?? 0);
   const { data } = useData();
   const [isDisabled, changeNextBtn] = useState(true);
   const [openTour, setTourVisibility] = useState(false)

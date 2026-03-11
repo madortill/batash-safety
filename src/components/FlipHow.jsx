@@ -48,7 +48,7 @@ function FlipHow({ changePage, changeToSection }) {
       <p className="title title-FlipHow">{title}</p>
       <div className='FlipHow-content'>
         <div className='FlipHow-btn' onClick={() => handleButtonClick(0)}>
-            <img className='FlipHow-btn-img' src={holdImg} alt="announce" />
+            <img className='FlipHow-btn-img' src={holdImg} alt="hold" />
             <p>{hold}</p>
         </div>
         <div className='FlipHow-btn' onClick={() => handleButtonClick(1)}>

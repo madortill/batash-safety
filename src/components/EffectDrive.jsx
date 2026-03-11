@@ -18,7 +18,7 @@ function EffectDrive({changePage}) {
   const car = data.EffectDrive[0].car;
    const galSrc = data.EffectDrive[0].galSrc;
     const previousPage = () => {
-      changePage(1);
+      changePage(1, true);
   };
   const nextPage = () => {
       if (page === 1) {

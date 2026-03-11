@@ -14,7 +14,7 @@ function Content() {
   const [sectionStartPages, setSectionStartPages] = useState({});
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {
-    1: 2,
+    1: 7,
     2: 2,
     3: 3,
     4: 1,
