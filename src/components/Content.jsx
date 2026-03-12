@@ -8,15 +8,16 @@ import PullOver from "./PullOver";
 import Practices from "./Practices";
 import NavBar from "./NavBar";
 import Habits from "./Habits";
+import SpecialConditions from "./SpecialConditions";
 
 function Content() {
-  const [section, setSection] = useState(0);
+  const [section, setSection] = useState(3);
   const [sectionStartPages, setSectionStartPages] = useState({});
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {
     1: 7,
-    2: 2,
-    3: 3,
+    2: 3,
+    3: 9,
     4: 1,
   };
   const handleChangeSection = (targetSection, returnToLast = false) => {
@@ -48,6 +49,8 @@ function Content() {
           startingPage={sectionStartPages[2] ?? 0}
         />
       )}
+      {section == 3 && <SpecialConditions changeToSection={handleChangeSection}
+          startingPage={sectionStartPages[3] ?? 0}/>}
       {section !== 0 && (
         <NavBar navSection={navSection} setNavSection={setNavSection} />
       )}

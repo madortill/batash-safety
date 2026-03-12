@@ -24,7 +24,7 @@ function ForcedPullOverPractice({ changePage, changeToBigSection }) {
   const nextPage = () => {
     if (canContinue) {
       if (page === 1) {
-        changeToBigSection(4);
+        changeToBigSection(3);
       } else {
         setPage(1);
         setCanContinue(false);

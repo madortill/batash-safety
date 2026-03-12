@@ -31,7 +31,7 @@ function FlipHow({ changePage, changeToSection }) {
   };
   const nextPage = () => {
     if (canContinue) {
-        changeToSection(1);
+        changeToSection(2);
     }
   };
 

@@ -1,0 +1,45 @@
+.title-PracticeStart {
+    font-size: 3.5rem;
+    position: relative;
+    top: 5rem;
+} 
+
+.practiceImg {
+    position: relative;
+    top: 5rem;
+}
+
+@media (max-width: 1300px) {
+    .practiceImg {
+    top: 10rem;
+    width: 65rem;
+}
+}
+@media (max-width: 1100px) {
+    .practiceImg {
+    top: 10rem;
+    width: 55rem;
+}
+}
+
+@media (max-height: 650px) {
+    .title-PracticeStart {
+    font-size: 3rem;
+} 
+    .practiceImg {
+    top: 7rem;
+    width: 50rem;
+}
+}
+
+@media (max-width: 900px) {
+    .practiceImg {
+    width: 45rem;
+}
+}
+@media (max-width: 800px) {
+    .practiceImg {
+    width: 40rem;
+}
+}
+

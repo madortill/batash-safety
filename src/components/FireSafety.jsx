@@ -13,7 +13,7 @@ function FireSafety({ changePage, changeToSection }) {
         changePage(5);
     };
     const nextPage = () => {
-        changeToSection(2);
+        changeToSection(3);
     };
   return (
     <div className='FireSafety'>

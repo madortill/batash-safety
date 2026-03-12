@@ -1,6 +1,5 @@
 import React from 'react'
 import "../css/Fire.css";
-import { useState } from "react";
 import { useData } from "../context/DataContext";
 
 import BackBtn from "./BackBtn";

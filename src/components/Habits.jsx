@@ -12,7 +12,7 @@ import { useData } from "../context/DataContext";
 
 function Habits({changeToSection, startingPage}) {
   const { data } = useData();
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(startingPage);
         const [startPage, setStartPage] = useState(0);
         const pagesMap = {
           0: 0,

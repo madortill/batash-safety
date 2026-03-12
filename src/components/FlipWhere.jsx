@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/Flip.css";
-import { useState } from "react";
 import { useData } from "../context/DataContext";
 
 import map from "../assets/images/mapLocation.png";

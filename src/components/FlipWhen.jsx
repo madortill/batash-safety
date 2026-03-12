@@ -3,9 +3,10 @@ import "../css/Flip.css";
 import { useState } from "react";
 import { useData } from "../context/DataContext";
 
+import BackBtn from "./BackBtn";
 import galGalgal from "../assets/images/galGalgal.png";
 
-function FlipWhen({changePage}) {
+function FlipWhen({changePage, changeToSection}) {
   const [page, setPage] = useState(0);
   const [isDisabled, changeNextBtn] = useState(true);
   const { data } = useData();
@@ -18,6 +19,10 @@ function FlipWhen({changePage}) {
   const flip4 = data.FlipWhen[1].flip4;
   const flip5 = data.FlipWhen[1].flip5;
   const flip6 = data.FlipWhen[1].flip6;
+
+      const previousPage = () => {
+        changeToSection(0, true);
+    };
 
   const nextPage = () => {
     if (!isDisabled) {
@@ -32,6 +37,7 @@ function FlipWhen({changePage}) {
   };
   return (
     <div className="flipWhen">
+      <BackBtn previousPage={previousPage} />
       <p className="title title-flipWhen">{title}</p>
       <p className="text-flipWhen">{text}</p>
       <div className="galBubble gal-flipWhen" onClick={nextStep}>

@@ -1,0 +1,143 @@
+.title-SpecialConditions {
+  position: relative;
+  top: 5rem;
+}
+
+/* SpecialConditionsStart */
+
+.title-SpecialConditionsStart {
+  font-size: 3.5rem;
+  position: relative;
+  top: 5rem;
+}
+
+.SpecialConditionsImg {
+  position: relative;
+  top: 5rem;
+}
+
+@media (max-width: 1300px) {
+  .SpecialConditionsImg {
+    top: 10rem;
+    width: 65rem;
+  }
+}
+@media (max-width: 1100px) {
+  .SpecialConditionsImg {
+    top: 10rem;
+    width: 55rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .title-SpecialConditionsStart {
+    font-size: 3rem;
+  }
+  .SpecialConditionsImg {
+    top: 7rem;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .SpecialConditionsImg {
+    width: 40rem;
+  }
+}
+@media (max-width: 800px) {
+  .SpecialConditionsImg {
+    width: 35rem;
+  }
+}
+
+/* Urban */
+.urban-text-container {
+  position: relative;
+  top: 5rem;
+  white-space: pre-line;
+  text-align: right;
+  font-size: 1.8rem;
+  left: 20rem;
+}
+.semiTitle-Urban {
+  font-family: "assistant-bold";
+}
+
+.map-urban {
+  width: 15rem;
+  cursor: pointer;
+  position: relative;
+  top: 10rem;
+}
+
+.note-Urban {
+  font-size: 1.5rem;
+  position: relative;
+  top: 10rem;
+}
+
+@media (max-height: 650px) {
+  .map-urban {
+    width: 12rem;
+    top: 7rem;
+  }
+
+  .note-Urban {
+    top: 7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .urban-text-container {
+  left: 13rem;
+}
+}
+@media (max-width: 850px) {
+  .urban-text-container {
+  left: 9rem;
+}
+}
+
+.urbanBubble {
+    background-image: url(../assets/images/mapBackground.svg);
+    width: 23rem;
+    height: 25rem;
+    font-size: 1.5rem;
+    padding: 4rem 5.5rem 7rem 5.5rem;
+    background-size: 100% 100%;
+    color: #ffffff;position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 5;
+      white-space: pre-line;
+}
+
+.close-btn-urban {
+    right: 5.5rem;
+    top: 1.7rem;
+}
+
+.buildingImg {
+    position: relative;
+    top: 8rem;
+}
+
+@media (max-width: 1400px) {
+  .buildingImg {
+    width: 65rem;
+}
+}
+@media (max-width: 1250px) {
+  .buildingImg {
+    width: 55rem;
+    top: 12rem;
+}
+}
+
+@media (max-height: 650px) {
+   .buildingImg {
+    width: 40rem;
+    top: 8rem;
+}
+}

@@ -16,7 +16,7 @@ function Flip({ changePractice, startingPage }) {
   };
   return (
     <div className='Flip'>
-     {page === 0 && <FlipWhen changePage={handleChangePage}/>}
+     {page === 0 && <FlipWhen changePage={handleChangePage} changeToSection={handleChangeSection}/>}
      {page === 1 && <FlipWhere changePage={handleChangePage}/>}
      {page === 2 && <FlipStage changePage={handleChangePage}/>}
      {page === 3 &&  <FlipHow changePage={handleChangePage} changeToSection={handleChangeSection} />}

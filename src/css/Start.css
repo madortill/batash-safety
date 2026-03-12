@@ -1,3 +1,7 @@
+
+.pulse-animation {
+    animation: pulse 1.8s ease infinite;
+}
 /* backBtn */
 
 .backBtn {
@@ -174,6 +178,7 @@
     display: inline-block;
     transition: transform 0.25s ease;
 }
+
 
 @keyframes pulse {
     0% {
