@@ -1,0 +1,24 @@
+.title-Summary {
+  position: relative;
+  top: 5rem;
+}
+
+/* CarCheck */
+
+.CarCheckImg {
+  width: 30rem;
+  position: relative;
+  top: 5rem;
+}
+
+@media (max-height: 750px) {
+  .CarCheckImg {
+    width: 25rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .CarCheckImg {
+    width: 20rem;
+  }
+}

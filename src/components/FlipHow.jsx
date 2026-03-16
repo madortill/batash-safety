@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from "react";
 import { useData } from "../context/DataContext";
+import "../css/Flip.css";
+
 import BackBtn from "./BackBtn";
 
 import announceImg from "../assets/images/announce-icon.svg";

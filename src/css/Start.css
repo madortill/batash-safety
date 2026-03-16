@@ -49,6 +49,7 @@
     position: absolute;
     bottom: 1.5rem;
     left: 1.5rem;
+    z-index: 1;
 }
 
 .nextBtn:hover {
@@ -63,6 +64,10 @@
 
 .nextBtnDisable:hover {
     transform: scale(1);
+}
+
+.nextBtn-overBackground {
+    z-index: 5;
 }
 
 @media (max-height: 650px) {

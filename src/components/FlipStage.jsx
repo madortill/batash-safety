@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useData } from "../context/DataContext";
+import "../css/Flip.css";
+
 import FlipCard from "./FlipCard";
 import BackBtn from "./BackBtn";
 

@@ -9,6 +9,7 @@ import Practices from "./Practices";
 import NavBar from "./NavBar";
 import Habits from "./Habits";
 import SpecialConditions from "./SpecialConditions";
+import Summary from "./Summary";
 
 function Content() {
   const [section, setSection] = useState(3);
@@ -17,8 +18,7 @@ function Content() {
   const SECTION_RETURN_PAGE_MAP = {
     1: 7,
     2: 3,
-    3: 9,
-    4: 1,
+    3: 8
   };
   const handleChangeSection = (targetSection, returnToLast = false) => {
     // חזרה לתפריט הראשי
@@ -51,6 +51,7 @@ function Content() {
       )}
       {section == 3 && <SpecialConditions changeToSection={handleChangeSection}
           startingPage={sectionStartPages[3] ?? 0}/>}
+          {section == 4 && <Summary changeToSection={handleChangeSection}/>}
       {section !== 0 && (
         <NavBar navSection={navSection} setNavSection={setNavSection} />
       )}

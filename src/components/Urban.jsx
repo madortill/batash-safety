@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useData } from "../context/DataContext";
+import "../css/SpecialConditions.css";
 
 import BackBtn from "./BackBtn";
 import map from "../assets/images/mapLocation.png";

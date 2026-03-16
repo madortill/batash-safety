@@ -106,6 +106,13 @@
     font-family: "assistant";
 }
 
+.flip-card--orange .flip-card-back {
+    background-color: #E69907;
+}
+.flip-card--orange .flip-card-front {
+    background-color: #E69907;
+}
+
 @media (max-height: 650px) {
 .flip-card--FirePractice {
     width: 14rem;
