@@ -7,6 +7,7 @@ import Start from "./components/Start";
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
 import Content from "./components/Content";
+import End from "./components/End";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Start/>} />
         <Route path="/content" element={<Content/>} />
+        <Route path="/end" element={<End />} />
       </Routes>
     </>
   );

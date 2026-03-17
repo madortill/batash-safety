@@ -11,6 +11,7 @@ function RotationRight({ changePage }) {
   const { data } = useData();
   const nextBtn = data.general[1].text;
   const title = data.RotationRight[0].title;
+  const note = data.RotationRight[0].note;
   const card1Title = data.RotationRight[0].card1Title;
   const card2Title = data.RotationRight[0].card2Title;
   const card1Text = data.RotationRight[0].card1Text;
@@ -36,6 +37,7 @@ function RotationRight({ changePage }) {
         {nextBtn}
       </button>
       <p className="title title-SpecialConditions">{title}</p>
+      <p className="note-RotationRight">{note}</p>
       <div className="RotationRight-cards">
         <div className={`RotationRightCard ${openBlue ? "open" : ""}`}>
           <button

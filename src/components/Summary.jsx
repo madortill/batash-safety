@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import CarCheck from './CarCheck';
+import BeforeDrive from './BeforeDrive';
 
 function Summary({changeToSection}) {
     const [page, setPage] = useState(0);
@@ -23,6 +24,7 @@ function Summary({changeToSection}) {
   return (
     <div className='Summary'>
       {page === 0 && <CarCheck changePage={handleChangePage} changeSection={handleChangeSection}/>}
+      {page === 1 && <BeforeDrive changePage={handleChangePage}/>}
     </div>
   )
 }

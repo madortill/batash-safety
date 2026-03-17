@@ -400,6 +400,9 @@
 .RotationRightCard.orange .RotationRightCard-title {
   background: #e39b00;
 }
+.RotationRightCard.red .RotationRightCard-title {
+  background: #CC3132;
+}
 
 .RotationRightCard-content {
   background: inherit;
@@ -430,18 +433,39 @@
   background: #e39b00;
   color: white;
 }
+.RotationRightCard.red .RotationRightCard-content {
+  background: #CC3132;
+  color: white;
+}
+
+
 
 .RotationRight-cards {
   display: flex;
   gap: 2rem;
   position: absolute;
-  top: 10rem;
+  top: 12rem;
   right: 50%;
   transform: translateX(50%);
 }
 
 .RotationRightCard-img {
   height: 7rem;
+}
+
+.note-RotationRight {
+  font-size: 1.3rem;
+  position: relative;
+  top: 4rem;
+}
+
+@media (max-height: 650px) {
+.RotationRight-cards {
+  top: 11rem;
+}
+  .note-RotationRight {
+    top: 3.5rem;
+  }
 }
 
 /* GearSpeed */
