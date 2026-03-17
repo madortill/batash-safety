@@ -112,6 +112,10 @@
 .flip-card--orange .flip-card-front {
     background-color: #E69907;
 }
+.flip-card--orange .textBack {
+    padding: 5%;
+    font-size: 1.5rem;
+} 
 
 @media (max-height: 650px) {
 .flip-card--FirePractice {
