@@ -12,7 +12,7 @@ import SpecialConditions from "./SpecialConditions";
 import Summary from "./Summary";
 
 function Content() {
-  const [section, setSection] = useState(4);
+  const [section, setSection] = useState(0);
   const [sectionStartPages, setSectionStartPages] = useState({});
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {
