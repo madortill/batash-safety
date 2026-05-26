@@ -6,7 +6,7 @@ import PullOver from "./PullOver";
 import PracticeStart from './PracticeStart';
 
 function Practices({changeToSection, startingPage}) {
-    const [page, setPage] = useState(startingPage);
+    const [page, setPage] = useState(0);
     const [startPage, setStartPage] = useState(0);
     const pagesMap = {
       0: 0,
